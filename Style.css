@@ -10,14 +10,14 @@ body {
 
 .flex-container {
     display: flex;
-    text-align: center;
+    text-align: right;
     padding: 15px;
-    justify-content: center;
+    justify-content: right;
     background-color: rgba(132,69,72,255);
   }
 
   .flex-container > a {
-    padding: 0% 15%;
+    padding: 0% 3%;
   }
 
 .home img {
@@ -26,4 +26,10 @@ body {
   width: 1500px;
   height: 700px;
   object-fit: cover;
+}
+
+.box1 {
+  background-color: #000;
+  color: #fff;
+  opacity: .5;
 }
