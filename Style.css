@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(158,58,1,255);
+}
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+    background-color: rgba(132,69,72,255);
+  }
+
+  .flex-container > a {
+    padding: 0% 15%;
+  }
+
+.home img {
+  padding: 2%;
+  border-radius: 10%;
+  width: 1500px;
+  height: 700px;
+  object-fit: cover;
+}
