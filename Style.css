@@ -1,0 +1,37 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
+  background-color: rgba(158,58,1,255);
+}
+
+  .flex-container {
+    display: flex;
+    text-align: right;
+    padding: 15px;
+    justify-content: right;
+    background-color: rgba(132,69,72,255);
+  }
+
+  .flex-container > a {
+    padding: 0% 3%;
+  }
+
+  .home img {
+  padding: 2%;
+  border-radius: 10%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+  .box1 {
+  background-color: #000;
+  color: #fff;
+  opacity: .5;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
