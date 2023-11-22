@@ -1,37 +1,89 @@
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
   body {
-  background-color: rgba(158,58,1,255);
+    background-color: rgba(158,58,1,255);
 }
 
   .flex-container {
     display: flex;
     text-align: right;
-    padding: 15px;
+    padding: 8px 0px 5px 0px;
     justify-content: right;
     background-color: rgba(132,69,72,255);
   }
 
   .flex-container > a {
-    padding: 0% 3%;
+    margin: 0% 1%;
+  }
+
+  .home {
+    width: 100%;
+    height: 650px;
+    display: grid;
   }
 
   .home img {
-  padding: 2%;
-  border-radius: 10%;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+    padding: 3%;
+    border-radius: 10%;
+    width: 100%;
+    height: 77%; 
 }
 
   .box1 {
-  background-color: #000;
-  color: #fff;
-  opacity: .5;
-  position: absolute;
-  transform: translate(-50%, -50%);
+    background-color: gray;
+    position: absolute;
+    color: #fff;
+    opacity: .7;
+    width: 50%;
+    height: 70%;
+    margin: 5.3% 0% 0% 25%;
+    border-radius: 10%;
+    text-align: center;
 }
+
+.box2 {
+  background-color: rgb(69, 62, 62);
+  position: absolute;
+  color: #fff;
+  opacity: .9;
+  width: 30%;
+  height: 15%;
+  margin: 10% 0% 0% 35%;
+  border-radius: 10%;
+  text-align: center;
+  font-size: 34px;
+}
+
+.box3 {
+  background-color: rgb(69, 62, 62);
+  position: absolute;
+  color: #fff;
+  opacity: .9;
+  width: 22.5%;
+  height: 10%;
+  margin: 18.5% 0% 0% 38.5%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.box4 {
+  background-color: rgb(69, 62, 62);
+  position: absolute;
+  color: #fff;
+  opacity: .9;
+  width: 22.5%;
+  height: 10%;
+  margin: 24.5% 0% 0% 38.5%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+  .PfIMG {
+    height: 40px;
+    width: 40px;
+
+  }
