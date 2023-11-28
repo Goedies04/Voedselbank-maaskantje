@@ -8,16 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <div class="flex-container">
-        <a class="Pf" href=home.html>pf</a>
-    </div>
-    <div class="home">
-        <div>
-            <img src="images/1024x576a.jpg" alt="">
-            <p class="box1">ik ben een box</p>
-        </div>
-    </div>
-    </div> -->
 
     <?php
     $servername = "localhost";
