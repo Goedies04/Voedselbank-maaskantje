@@ -24,6 +24,10 @@
     }
     echo "Connected successfully";
 
+
+    
+
+
     // Fetch user data
     $query = "SELECT bsn, Voornaam,Tussenvoegsel, Achternaam,Geboortendatum,Telefoonnummer, Email FROM User";
     $result = $conn->query($query);
@@ -51,6 +55,30 @@
     // Close the connection
     $conn->close();
     ?>
+
+<form action="add_user.php" method="post">
+        <label for="bsn">BSN:</label>
+        <input type="text" name="bsn" required><br>
+
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" name="voornaam" required><br>
+
+        <label for="tussenvoegsel">Tussenvoegsel:</label>
+        <input type="text" name="tussenvoegsel"><br>
+
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" name="achternaam" required><br>
+
+        <label for="geboortedatum">Geboortedatum:</label>
+        <input type="date" name="geboortedatum" required><br>
+
+        <label for="telefoonnummer">Telefoonnummer:</label>
+        <input type="text" name="telefoonnummer" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <input type="submit" value="Add User">
 
 </body>
 </html>
