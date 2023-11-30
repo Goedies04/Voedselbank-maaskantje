@@ -70,6 +70,8 @@
   text-align: center;
 }
 
+/* styling voor de box om de gebruikersnaam heen */
+
 .box4 {
   background-color: rgba(93,92,92,255);
   position: absolute;
@@ -81,6 +83,8 @@
   border-radius: 15%;
   text-align: center;
 }
+
+/* styling voor de box om het wachtwoord heen */
 
 .box5 {
   background-color: rgba(186,187,186,255);
