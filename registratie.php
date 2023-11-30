@@ -24,34 +24,6 @@
     }
     echo "Connected successfully";
 
-
-    
-
-
-    // Fetch user data
-    $query = "SELECT bsn, Voornaam,Tussenvoegsel, Achternaam,Geboortendatum,Telefoonnummer, Email FROM User";
-    $result = $conn->query($query);
-
-    if ($result->num_rows > 0) {
-        // Create a dropdown list
-        echo '<form action="#" method="post">';
-        echo '<label for="userDropdown">Select a user:</label>';
-        echo '<select name="userDropdown" id="userDropdown">';
-
-        // Loop through the result set and generate options
-        while ($row = $result->fetch_assoc()) {
-            $bsn = $row["bsn"];
-            $fullName =  $row["bsn"]. '  ' . $row["Voornaam"] . '  '. $row["Tussenvoegsel"].'  '  . $row["Achternaam"] .'  '.  $row["Geboortendatum"].'  '. $row["Telefoonnummer"]. '  '.$row["Email"] ;
-            echo "<option value=\"$bsn\">$fullName</option>";
-        }
-
-        echo '</select>';
-        echo '<input type="submit" value="Submit">';
-        echo '</form>';
-    } else {
-        echo "No users found";
-    }
-
     // Close the connection
     $conn->close();
     ?>
