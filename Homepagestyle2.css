@@ -97,41 +97,39 @@ body {
 .PfIMG {
     height: 40px;
     width: 40px;
-}
-
-@media (max-width: 768px) {
+}@media (max-width: 768px) {
     .box2 {
-        width: 70%;
-        height: 20%;
-        margin: 5% 0% 0% 15%;
+        width: 30%;
+        height: 10%;
+        margin: 25% 0% 0% 35%;
         font-size: 18px;
     }
 
     .box3,
     .box4 {
-        width: 60%;
-        height: 8%;
+        width: 24%;
+        height: 6%;
     }
 
     .box3 {
-        margin: 15% 0% 0% 20%;
+        margin: 50% 0% 0% 38%;
     }
 
     .box4 {
-        margin: 20% 0% 0% 20%;
+        margin: 40% 0% 0% 38%;
     }
 
     .box5,
     .box6 {
-        width: 40%;
+        width: 20%;
         height: 3%;
     }
 
     .box5 {
-        margin: 15% 0% 0% 30%;
+        margin: 52% 0% 0% 40%;
     }
 
     .box6 {
-        margin: 20% 0% 0% 30%;
+        margin: 42% 0% 0% 40%;
     }
 }
