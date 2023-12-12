@@ -60,7 +60,7 @@
         <label for="bsn">BSN:</label>
         <input type="text" name="bsn" required><br>
 
-        <label for="voornaam">Voornaam:</label>
+        <label for="voornaam">Voornaam:</label>q
         <input type="text" name="voornaam" required><br>
 
         <label for="tussenvoegsel">Tussenvoegsel:</label>
