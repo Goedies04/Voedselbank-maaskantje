@@ -31,13 +31,17 @@ body {
     position: absolute;
     color: #fff;
     opacity: 0.7;
-    width: 50%;
+    width: 60%;
     height: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10%;
+    border-radius: 10%; 
+}
+
+.TextCenter {
     text-align: center;
+    margin-top: 6.25%;
 }
 
 .box2 {
@@ -49,7 +53,6 @@ body {
     height: 15%;
     margin: 10% 0% 0% 35%;
     border-radius: 10%;
-    text-align: center;
     font-size: 24px;
 }
 
@@ -138,6 +141,7 @@ body {
 }
 }
     @media (max-width: 1140px) {
+        
         .box2 {
             width: 30%;
             height: 10%;
@@ -174,6 +178,7 @@ body {
 }
 }
     @media (max-width: 1150px) {
+        
         .box2 {
             width: 30%;
             height: 10%;
@@ -210,39 +215,45 @@ body {
 }
 }
 
-    @media (max-width: 768px) {
+    @media (max-width: 768px) {   
+        
+        .TextCenter {
+            margin-top: 30px;
+            position: relative;
+        }
+        
         .box2 {
-            width: 30%;
-            height: 10%;
-            margin: 25% 0% 0% 35%;
+            width: 40%;
+            height: 15%;
+            margin: 140px 0% 0% 30%;
             font-size: 18px;
     }
 
         .box3,
         .box4 {
-            width: 24%;
+            width: 30%;
             height: 6%;
     }
 
         .box3 {
-            margin: 50% 0% 0% 38%;
+            margin: 335px 0% 0% 35%;
     }
 
         .box4 {
-            margin: 40% 0% 0% 38%;
+            margin: 270px 0% 0% 35%;
     }
 
         .UserBox,
         .PasswordBox {
-            width: 20%;
+            width: 22%;
             height: 3%;
     }
 
         .UserBox {
-            margin: 52% 0% 0% 40%;
+            margin: 345px 0% 0% 39%;
     }
 
         .PasswordBox {
-            margin: 42% 0% 0% 40%;
+            margin: 280px 0% 0% 39%;
     }
 }
