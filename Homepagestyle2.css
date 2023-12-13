@@ -65,17 +65,17 @@ body {
 }
 
 .box3 {
-    margin: 18.5% 0% 0% 38.5%;
+    margin: 19.5% 0% 0% 38.5%;
     border-radius: 15%;
 }
 
 .box4 {
-    margin: 24.5% 0% 0% 38.5%;
+    margin: 26.5% 0% 0% 38.5%;
     border-radius: 15%;
 }
 
-.box5,
-.box6 {
+.UserBox,
+.PasswordBox {
     background-color: rgba(186, 187, 186, 1);
     position: absolute;
     color: #fff;
@@ -86,50 +86,163 @@ body {
     border-radius: 15%;
 }
 
-.box5 {
-    margin: 19.5% 0% 0% 42%;
+.UserBox {
+    margin: 20.5% 0% 0% 42%;
 }
 
-.box6 {
-    margin: 25.5% 0% 0% 42%;
+.PasswordBox {
+    margin: 27.5% 0% 0% 42%;
 }
 
 .PfIMG {
     height: 40px;
     width: 40px;
-}@media (max-width: 768px) {
+
+}
+
+        
+@media (max-width: 1300px) {
     .box2 {
         width: 30%;
-        height: 10%;
-        margin: 25% 0% 0% 35%;
+        height: 25%;
+        margin: 14% 0% 0% 35%;
         font-size: 18px;
-    }
+}
 
     .box3,
     .box4 {
         width: 24%;
         height: 6%;
-    }
+}
 
     .box3 {
-        margin: 50% 0% 0% 38%;
-    }
+        margin: 40% 0% 0% 38%;
+}
 
     .box4 {
-        margin: 40% 0% 0% 38%;
-    }
+        margin: 32.5% 0% 0% 38%;
+}
 
-    .box5,
-    .box6 {
+    .UserBox,
+    .PasswordBox {
         width: 20%;
         height: 3%;
+}
+
+    .UserBox {
+        margin: 41% 0% 0% 40%;
+}
+
+    .PasswordBox {
+        margin: 33.5% 0% 0% 40%;
+}
+}
+    @media (max-width: 1140px) {
+        .box2 {
+            width: 30%;
+            height: 10%;
+            margin: 20% 0% 0% 35%;
+            font-size: 18px;
+}
+
+        .box3,
+        .box4 {
+            width: 24%;
+            height: 6%;
+}
+
+        .box3 {
+            margin: 40% 0% 0% 38%;
+}
+
+        .box4 {
+            margin: 32.5% 0% 0% 38%;
+}
+
+        .UserBox,
+        .PasswordBox {
+            width: 20%;
+            height: 3%;
+}
+
+        .UserBox {
+            margin: 41% 0% 0% 40%;
+}
+
+        .PasswordBox {
+            margin: 33.5% 0% 0% 40%;
+}
+}
+    @media (max-width: 1150px) {
+        .box2 {
+            width: 30%;
+            height: 10%;
+            margin: 20% 0% 0% 35%;
+            font-size: 18px;
+}
+
+        .box3,
+        .box4 {
+            width: 24%;
+            height: 6%;
+}
+
+        .box3 {
+            margin: 40% 0% 0% 38%;
+}
+
+        .box4 {
+            margin: 32.5% 0% 0% 38%;
+}
+
+        .UserBox,
+        .PasswordBox {
+            width: 20%;
+            height: 3%;
+}
+
+        .UserBox {
+            margin: 41% 0% 0% 40%;
+}
+
+        .PasswordBox {
+            margin: 33.5% 0% 0% 40%;
+}
+}
+
+    @media (max-width: 768px) {
+        .box2 {
+            width: 30%;
+            height: 10%;
+            margin: 25% 0% 0% 35%;
+            font-size: 18px;
     }
 
-    .box5 {
-        margin: 52% 0% 0% 40%;
+        .box3,
+        .box4 {
+            width: 24%;
+            height: 6%;
     }
 
-    .box6 {
-        margin: 42% 0% 0% 40%;
+        .box3 {
+            margin: 50% 0% 0% 38%;
+    }
+
+        .box4 {
+            margin: 40% 0% 0% 38%;
+    }
+
+        .UserBox,
+        .PasswordBox {
+            width: 20%;
+            height: 3%;
+    }
+
+        .UserBox {
+            margin: 52% 0% 0% 40%;
+    }
+
+        .PasswordBox {
+            margin: 42% 0% 0% 40%;
     }
 }
