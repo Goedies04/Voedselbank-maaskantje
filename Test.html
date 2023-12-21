@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Navigation</title>
+  <style>
+    /* Style to make the content visually appealing (optional) */
+    #submit, #unextendedContent {
+      display: none;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Links -->
+  <button onclick="extend()">Show Submit</button>
+  <button onclick="unextend()">Show Unextended Content</button>
+
+  <!-- Content Sections -->
+  <div id="submit">
+    <!-- Content for the "submit" section -->
+    <h2>Submit Section</h2>
+    <p>This is the extended content that you want to display.</p>
+  </div>
+
+  <script>
+    function extend() {
+      var extendedContent = document.getElementById("submit");
+      var unextendedContent = document.getElementById("unextendedContent");
+
+      // Show extended content
+      extendedContent.style.display = "block";
+
+      // Hide unextended content
+      unextendedContent.style.display = "none";
+    }
+
+    function unextend() {
+      var extendedContent = document.getElementById("submit");
+      var unextendedContent = document.getElementById("unextendedContent");
+
+      // Hide extended content
+      extendedContent.style.display = "none";
+
+      // Show unextended content
+      unextendedContent.style.display = "block";
+    }
+  </script>
+</body>
+</html>
