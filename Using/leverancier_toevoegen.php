@@ -1,3 +1,14 @@
+<!--Checks to see login-->
+<?php
+session_start();
+require 'Databaseconnectie.php';
+
+if (!isset($_SESSION["username"])) {
+    header("Location: inlogpagina.php");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -246,6 +257,8 @@ $classDatabase = new Database();
 $conn = $classDatabase->connect();
 // verbind met de database
 ?>
+
+
 
 
 <div id="submit5" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">

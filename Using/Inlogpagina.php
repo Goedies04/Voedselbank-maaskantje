@@ -1,3 +1,42 @@
+
+<?php
+session_start();
+require 'Databaseconnectie.php';
+$classDatabase = new Database();
+$conn = $classDatabase->connect();
+// Check if the form has been submitted
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Replace these with your actual credentials validation logic
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $username = $_POST['Gebruikersnaam'];
+        $password = $_POST['Wachtwoord'];
+
+
+
+        $query = "SELECT * FROM login WHERE Gebruikersnaam='$username' AND Wachtwoord='$password'";
+        $result = mysqli_query($conn, $query);
+
+        if ($result && mysqli_num_rows($result) > 0) {
+
+            header("Location: dashboard.php");
+            $_SESSION['username'] = 1;
+        }
+
+        if (isset($_POST['submit27'])) {
+
+            echo '<script>alert("Error: username or password not found")</script>';
+
+
+        }
+        exit();
+    }
+
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,37 +59,5 @@
 </div>
 </body>
 </html>
-
-<?php
-include_once "Databaseconnectie.php";
-$classDatabase = new Database();
-$conn = $classDatabase->connect();
-// verbind met de database
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['Gebruikersnaam'];
-    $password = $_POST['Wachtwoord'];
-
-
-
-    $query = "SELECT * FROM login WHERE Gebruikersnaam='$username' AND Wachtwoord='$password'";
-    $result = mysqli_query($conn, $query);
-
-    if ($result && mysqli_num_rows($result) > 0) {
-
-        header("Location: dashboard.php");
-    }
-
-    if (isset($_POST['submit27'])) {
-
-        echo '<script>alert("Error: username or password not found")</script>';
-
-
-    }
-    exit();
-}
-
-mysqli_close($conn);
-?>
 
 <a href="registratie.php">Registreren</a>

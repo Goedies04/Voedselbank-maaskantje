@@ -1,3 +1,16 @@
+<!--Checks to see login-->
+
+<?php
+session_start();
+require 'Databaseconnectie.php';
+
+if (!isset($_SESSION["username"])) {
+    header("Location: inlogpagina.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -31,11 +44,11 @@
             <span class="tooltip">Voedselpaket</span>
         </li>
         <li>
-            <a href="Inlogpagina.php">
+            <a href="logout.php">
                 <i class='bx bx-cog' ></i>
-                <span class="links_name">Inlogpagina.php</span>
+                <span class="links_name">Uitloggen</span>
             </a>
-            <span class="tooltip">Inlogpagina.php</span>
+            <span class="tooltip">Uitloggen</span>
 
     </ul>
 </div>
@@ -237,6 +250,12 @@
     }
 </Style>
 <!-- de code hier boven is voor de navigatie bar -->
+
+
+
+
+
+
 
 <div class="centered-link">
 <a href="Rollen_toevoegen.php">Rollen pagina</a>

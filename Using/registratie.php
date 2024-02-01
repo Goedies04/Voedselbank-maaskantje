@@ -7,6 +7,9 @@
 
     <title>Document</title>
 </head>
+
+
+
 <?php
 include_once "Databaseconnectie.php";
 $classDatabase = new Database();
@@ -15,7 +18,8 @@ $conn = $classDatabase->connect();
 
     if (isset($_POST['submit2017'])) {
     $stmt = $conn->prepare("INSERT INTO login (MedewerkerId, Gebruikersnaam, Wachtwoord, User_bsn) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $_POST['MedewerkerId'], $_POST['Gebruikersnaam'], $_POST['Wachtwoord'], $_POST['bsn']);
+    $password = password_hash($_POST['Wachtwoord'], PASSWORD_DEFAULT);
+    $stmt->bind_param("ssss", $_POST['MedewerkerId'], $_POST['Gebruikersnaam'],$password, $_POST['bsn']);
 
     try {
         $stmt->execute();
@@ -63,8 +67,8 @@ $conn = $classDatabase->connect();
     <br>
     <br>
 
-    <form action="" method="post"  >
-<!-- deze formulier is om een login toe te voegen -->
+    <form action="" method="post">
+        <!-- deze formulier is om een login toe te voegen -->
         <label for="MedewerkerId">MedewerkerId:</label>
         <input type="text" name="MedewerkerId" required><br>
 
@@ -74,10 +78,8 @@ $conn = $classDatabase->connect();
         <label for="Wachtwoord">Wachtwoord:</label>
         <input type="password" name="Wachtwoord"><br>
 
-
         <label for="userDropdown">Select an existing bsn:</label>
         <select name="bsn" id="bsn">
-
             <?php
             $query = "SELECT DISTINCT bsn FROM user";
             $resultDropdown = $conn->query($query);
@@ -91,8 +93,10 @@ $conn = $classDatabase->connect();
             }
             ?>
         </select>
-        <input type="submit" name="submit2017"   value="Add Login">
-</form>
+        <input type="submit" name="submit2017" value="Add Login">
+    </form>
+
+  
     <a href="inlogpagina.php">Inloggen</a>
 </div>
 </body>
