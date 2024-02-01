@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(158, 58, 1, 1);
+}
+
+.home {
+    width: 100%;
+    height: 650px;
+    display: grid;
+}
+
+.home img {
+    padding: 3%;
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Username {
+    margin-left: 40%;
+    margin-top: 21%;
+    z-index: 9;
+}
+
+.box1 {
+    background-color: gray;
+    position: absolute;
+    color: #fff;
+    opacity: 0.7;
+    width: 60%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%; 
+}
+
+.TextCenter {
+    text-align: center;
+    margin-top: 6.25%;
+}
+
+.box2 {
+    background-color: rgba(93, 92, 92, 1);
+    position: absolute;
+    color: #fff;
+    opacity: 0.9;
+    width: 30%;
+    height: 15%;
+    margin: 10% 0% 0% 35%;
+    border-radius: 10%;
+    font-size: 24px;
+}
+
+.box3,
+.box4 {
+    background-color: rgba(93, 92, 92, 1);
+    position: absolute;
+    color: #fff;
+    opacity: 0.9;
+    width: 22.5%;
+    height: 10%;
+    text-align: center;
+}
+
+.box3 {
+    margin: 19.5% 0% 0% 38.5%;
+    border-radius: 15%;
+}
+
+.box4 {
+    margin: 26.5% 0% 0% 38.5%;
+    border-radius: 15%;
+}
+
+.UserBox,
+.PasswordBox {
+    background-color: rgba(186, 187, 186, 1);
+    position: absolute;
+    color: #fff;
+    opacity: 0.9;
+    width: 15%;
+    height: 5.5%;
+    text-align: center;
+    border-radius: 15%;
+}
+
+.UserBox {
+    margin: 20.5% 0% 0% 42%;
+}
+
+.PasswordBox {
+    margin: 27.5% 0% 0% 42%;
+}
+
+.PfIMG {
+    height: 40px;
+    width: 40px;
+
+}
+
+        
+@media (max-width: 1300px) {
+    .box2 {
+        width: 30%;
+        height: 25%;
+        margin: 14% 0% 0% 35%;
+        font-size: 18px;
+}
+
+    .box3,
+    .box4 {
+        width: 24%;
+        height: 6%;
+}
+
+    .box3 {
+        margin: 40% 0% 0% 38%;
+}
+
+    .box4 {
+        margin: 32.5% 0% 0% 38%;
+}
+
+    .UserBox,
+    .PasswordBox {
+        width: 20%;
+        height: 3%;
+}
+
+    .UserBox {
+        margin: 41% 0% 0% 40%;
+}
+
+    .PasswordBox {
+        margin: 33.5% 0% 0% 40%;
+}
+}
+    @media (max-width: 900px) {
+
+        .TextCenter {
+            margin-top: 27px;
+            position: relative;
+        }
+        
+        .box2 {
+            width: 43%;
+            height: 15%;
+            margin: 165px 0% 0% 28.5%;
+            font-size: 18px;
+}
+
+        .box3,
+        .box4 {
+            width: 30%;
+            height: 6%;
+}
+
+        .box3 {
+            margin: 385px 0% 0% 35%;
+}
+
+        .box4 {
+            margin: 310px 0% 0% 35%;
+}
+
+        .UserBox,
+        .PasswordBox {
+            width: 22%;
+            height: 3%;
+}
+
+        .UserBox {
+            margin: 395px 0% 0% 39%;
+}
+
+        .PasswordBox {
+            margin: 320px 0% 0% 39%;
+}
+}
+
+    @media (max-width: 768px) {   
+        
+        .TextCenter {
+            margin-top: 30px;
+            position: relative;
+        }
+        
+        .box2 {
+            width: 40%;
+            height: 15%;
+            margin: 140px 0% 0% 30%;
+            font-size: 18px;
+    }
+
+        .box3,
+        .box4 {
+            width: 30%;
+            height: 6%;
+    }
+
+        .box3 {
+            margin: 335px 0% 0% 35%;
+    }
+
+        .box4 {
+            margin: 270px 0% 0% 35%;
+    }
+
+        .UserBox,
+        .PasswordBox {
+            width: 22%;
+            height: 3%;
+    }
+
+        .UserBox {
+            margin: 345px 0% 0% 39%;
+    }
+
+        .PasswordBox {
+            margin: 280px 0% 0% 39%;
+    }
+}
