@@ -286,7 +286,7 @@ $conn = $classDatabase->connect();
                 if ($resultDropdown->num_rows > 0) {
                     while ($rowDropdown = $resultDropdown->fetch_assoc()) {
                         $bsn = $rowDropdown["idRollen"];
-                        $showdata = $rowDropdown["idRollen"];
+                        $showdata = $rowDropdown["Rollen"];
                         echo "<option value=\"$bsn\">$showdata</option>";
                     }
                     echo '</select>';

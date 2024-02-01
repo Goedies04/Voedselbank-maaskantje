@@ -286,13 +286,13 @@ $conn = $classDatabase->connect();
             <select name="idLeveranciers" id="LeverancierDropdown">
 
                 <?php
-                $query = "SELECT DISTINCT idLeveranciers FROM leveranciers";
+                $query = "SELECT DISTINCT idLeveranciers Bedrijfnaam FROM leveranciers";
                 $resultDropdown = $conn->query($query);
 
                 if ($resultDropdown->num_rows > 0) {
                     while ($rowDropdown = $resultDropdown->fetch_assoc()) {
                         $bsn = $rowDropdown["idLeveranciers"];
-                        $showdata = $rowDropdown["idLeveranciers"];
+                        $showdata = $rowDropdown["Bedrijfnaam"];
                         echo "<option value=\"$bsn\">$showdata</option>";
                     }
                     echo '</select>';

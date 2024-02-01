@@ -294,6 +294,14 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Box shadow */
+    transition: 0.3s; /* Animation for hover effect */
+}
+
+.centered-link a:hover {
+    background-color: #45a049; /* Darker green when hovered */
+    box-shadow: 0 12px 28px 0 rgba(0,0,0,0.24), 0 2px 4px 0 rgba(0,0,0,0.12); /* Larger box shadow when hovered */
 }
 
 </style>

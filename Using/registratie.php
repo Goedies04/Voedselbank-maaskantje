@@ -72,7 +72,7 @@ $conn = $classDatabase->connect();
         <input type="text" name="Gebruikersnaam" required><br>
 
         <label for="Wachtwoord">Wachtwoord:</label>
-        <input type="text" name="Wachtwoord"><br>
+        <input type="password" name="Wachtwoord"><br>
 
 
         <label for="userDropdown">Select an existing bsn:</label>

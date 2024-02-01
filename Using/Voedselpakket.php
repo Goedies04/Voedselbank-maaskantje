@@ -25,7 +25,7 @@
         </li>
 
         <li>
-            <a href="Tabel.php">
+            <a href="voedselpakket.php">
                 <i class='bx bx-baguette' ></i>
                 <span class="links_name">Voedselpaket</span>
             </a>
@@ -351,7 +351,7 @@ function displayProducts($conn) {
 if (isset($_POST['submit_products'])) {
     if (isset($_POST['selectedProducts']) && is_array($_POST['selectedProducts'])) {
         $selectedProducts = $_POST['selectedProducts'];
-        print_r($selectedProducts);
+        
 
         $voedselpakketenID = $_POST['voedselpakketenID'];
 
@@ -363,7 +363,7 @@ if (isset($_POST['submit_products'])) {
         }
 
         $stmtInsert->close();
-        echo "Selected products added to Voedselpakketen $voedselpakketenID successfully!";
+        echo "<div style='margin-top: 90px;'>Selected products added to Voedselpakketen $voedselpakketenID successfully!</div>";
     } else {
         echo "No products selected!";
     }
